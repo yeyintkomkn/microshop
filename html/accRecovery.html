@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="../css/memberform.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+		<div id="recover">
+			<fieldset>
+			<legend>	<h1 id="title">Recover Account</h1></legend>
+
+				Enter email address that you entered when you create account:<br>
+				<input type="email" autocomplete="off" autofocus="on" name="email" maxlength="40" id="email" placeholder="example@gmail.com">
+				<p id="emailError">&nbsp;</p>
+
+        <label>Choose question that you choiced when you create account:</label><br>
+        <select id="question" name="question">
+          <option value="0">Who is your Lover?</option>
+          <option value="1">Who am I?</option>
+          <option value="2">Who is your Idol?</option>
+          <option value="3">What is your favourite color?</option>
+        </select><br><br>
+        <label>Answer question that you answered when you create account::</label><br>
+        <input type="text" id="answer" name="answer">
+        <p id="answerError">&nbsp;</p>
+
+				<input type="submit" value="RecoverAccount" id="focus" class="btn" onclick="checkValidation()" >
+				<br>
+        <a href="login.html" class="link">Login</a>
+        <a href="register.html" class="link" id="regLink">Register</a>
+
+			</fieldset>
+		</div>
+
+<script src="../js/Recovery.js"></script>
+</body>
+</html>

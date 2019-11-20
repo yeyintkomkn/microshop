@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../css/displayPost.css" rel="stylesheet" type="text/css">
+<script src="../js/CookieUtil.js"></script>
+</head>
+<body onload="connect_DB()">
+	<div id='wrapper'>
+				<div id="status">
+					<div id="title">
+							<snap id="profilePicture">
+								<img class="slide" src=".../picture/test.jpg">
+							</snap>
+							<snap id="accName">Acc Name</snap>
+							<snap id="time">
+								<snap id="date">last 3 hrs</snap>
+								<img src="../picture/Icon/timelogo.png" class="time_image">
+							</snap>
+					</div>
+
+					<div id="image">
+						<!---insert html code of img form database in displayPost.js ---->
+						<!--
+						<input type="button" class="btn" id="btnleft" value="&#10094">
+						<input type="button" class="btn" id="btnright" value="&#10095">
+							<img class="slide" src="test.jpg">
+							<img class="slide" src="test.jpg">
+							<img class="slide" src="test.jpg">
+						-->
+					</div>
+					<div id="item_data">
+						<ul>
+							<li><b>Item-Name </b>		<i>-<snap id="output_name">connecting....</snap>	</i>
+							<li><b>Gender </b><i>-<snap id="output_gender">connecting....</snap></i>
+							<li><b>Price </b>		<i>-<snap id="output_price">connecting....</snap></i>
+							<li><b>Code </b>		<i>-<snap id="output_code">connecting....</snap></i>
+							<li><b>Contact </b>	<i>-<snap id="output_phone">connecting....</snap></i>
+						</ul>
+						<p><b>Description </b><snap id="aa">connecting....</snap></p>
+					</div>
+					<div id="footer">
+						<i><snap id="totalLove">0</snap> people Love reacted this.</i><br>
+						<div id="buttonflex">
+							<input type="button" value="Love" id="btnLove">
+							<input type="button" value="Order" id="btnOrder">
+							<input type="button" value="WishList" id="btnWishList">
+							<input type="button" value="Update" id="btnUpdate">
+							<input type="button" value="Delete" id="btnDelete">
+						</div>
+					</div>
+					<!---for orderList----->
+					<div id="float_customerInfo">
+						<h3>Order By</h3>
+						<div id="customer_info">
+							<b>Name </b>	<br><i><snap id="c_name">connecting....</snap></i>			<br>
+							<b>Email </b>		<br><i><snap id="c_email">connecting....</snap>	</i>	<br>
+							<b>Phone</b>		<br><i><snap id="c_phone">connecting....</snap></i>		<br>
+						</div>
+					</div>
+				</div>
+		<ul id="mylist">
+		</ul>
+		<h2 onclick="nextPost()">Click Here to see other Post...</h2>
+
+	</div>
+<script src="../js/displayPost.js"></script>
+</body>
+</html>

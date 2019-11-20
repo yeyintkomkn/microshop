@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link href="../css/post.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="getData()">
+
+	<div id="form">
+
+		<form id="postForm">
+			<div id="forImg">
+				<img id="img1" class="img"></img>
+				<img id="img2" class="img"></img>
+				<img id="img3" class="img"></img>
+			</div><br>
+			Select images: <br>
+			<input type="file" accept="image/*" class="imgfile" name="image1" id="image1" onchange="displaySelectedPhoto('image1','errorImage1')">
+			<p id="errorImage1">&nbsp;</p>
+			<input type="file" accept="image/*" class="imgfile" name="image2" id="image2" onchange="displaySelectedPhoto('image2','errorImage2')">
+			<p id="errorImage2">&nbsp;</p>
+			<input type="file" accept="image/*" class="imgfile" name="image3" id="image3" onchange="displaySelectedPhoto('image3','errorImage3')">
+			<p id="errorImage3">&nbsp;</p>
+
+			Brand Name:<br>
+			<input type="text" name="name" maxlength="30" id="name" placeholder="Brand Name" autocomplete="off">
+			<p id="errorName">&nbsp;</p>
+
+			Price in Kyats:<br>
+			<input type="text" name="price" maxlength="11"id="price" placeholder="XXXX Kyats">
+			<p id="errorPrice">&nbsp;</p>
+
+			Item Code No:<br>
+			<input type="text" name="code" id="code" placeholder="Code No">
+			<p id="errorCode">&nbsp;</p>
+
+			Gender:<br>
+			<input type="radio" name="gender" value="male" > Male
+			<input type="radio" name="gender" value="female"> Female
+			<input type="radio" name="gender" value="both" checked> Both
+			<br><br>
+
+
+			Category:<br>
+			<select name="category" id="category">
+				<option value="1">မိုးရာသီဖက္ရွင္</option>
+				<option value="2">အ၀တ္အထည္</option>
+				<option value="3">ခ်စ္သူမ်ားအတြက္</option>
+				<option value="4">ဖိနပ္</option>
+				<option value="5">အိတ္</option>
+				<option value="6">အားကစား၀တ္စံု</option>
+				<option value="7">မ်က္မွန္</option>
+				<option value="8">နာရီ</option>
+				<option value="9">အလွအပ</option>
+				<option value="10">စာေရးကိရိယာ</option>
+				<option value="11">ကြန္ပ်ူတာ/ဖုန္း</option>
+				<option value="12">မီးဖိုေခ်ာင္သံုးပစၥည္းမ်ား</option>
+				<option value="13">အိမ္အလွဆင္ပစၥည္းမ်ား</option>
+				<option value="14">ပရိေဘာဂ</option>
+				<option value="15">လ်ွပ္စစ္ပစၥည္းမ်ား</option>
+				<option value="16">လက္ေဆာင္</option>
+				<option value="17">အျခားအရာ</option>
+			</select><br><br>
+			<!--	<p id="errorCategory"></p><br><br>	-->
+
+			Choose Your City:<br>
+			<select name="city" id="city">
+				<option value="Myitkyina">Myitkyina</option>
+				<option value="Yangon">Yangon</option>
+				<option value="Mandalay">Mandalay</option>
+				<option value="Pago">Pago</option>
+				<option value="Magway">Magway</option>
+				<option value="Loikaw">Loikaw</option>
+				<option value="Lashio">Lashio</option>
+				<option value="Kalay">Kalay</option>
+				<option value="Bamaw">Bamaw</option>
+				<option value="Monywa">Monywa</option>
+				<option value="Meiktila">Meiktila</option>
+				<option value="Taunggyi">Taunggyi</option>
+				<option value="Pinlon">Pinlon</option>
+				<option value="Pakokku">Pakokku</option>
+			</select>
+			<br><br>
+
+			Description:<br>
+			<textarea name="description" id="description" id="phone" placeholder="Write Here....."></textarea>
+			<p id="errorDescription">&nbsp;</p><br>
+
+			<input type="button" id="btn" class="btn" value="Sell Now" onclick='checkValidation()'>
+
+		</form>
+	</div>
+
+<script src="../js/post.js"></script>
+</body>
+</html>

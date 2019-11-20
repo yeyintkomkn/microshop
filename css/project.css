@@ -1,0 +1,82 @@
+body{
+  background-color: #e7ffff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#wrapper{
+  margin: 0;
+  width: 60%;
+  height: 950px;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+}
+
+#wrapper #header{
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  background-color: lightpink;
+}
+#header:hover{
+	box-shadow:0 0 10em hotpink inset;
+}
+#header:hover #uni{
+	animation: one 3s;
+}
+@keyframes one{
+	100%{margin-left: 0px;}
+	50%{margin-left: 50px;}
+}
+#wrapper #header>img{
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 2px solid black;
+}
+#wrapper #header #uni{
+  font-size: 40px;
+  margin: 45px 0 0 30px;
+  float: left;
+  text-shadow: 0 0 3px black;
+}
+#wrapper #content{
+  width: 100%;
+  height: 550px;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper #content>#title{
+  padding-top: 2%;
+  font-size: 30px;
+}
+#wrapper #content>#title snap{
+  font-style: italic;
+  font-size: 35px;
+}
+#wrapper #content>img{
+  width: 50%;
+  height: 400px;
+  margin-top: 2%;
+}
+#wrapper #content a{
+  font-size: 20px;
+  color: blue;
+}
+#wrapper #team{
+  width: 200px;
+  height: 150px;
+  float: right;
+  font-size: 20px;
+  background: lightpink;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+#wrapper #team>ul li{
+  list-style-type: none;
+  margin-left: -30px;
+}

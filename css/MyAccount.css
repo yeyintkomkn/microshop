@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding:0;
+}
+fieldset{
+	background-color: white;
+	line-height: 40px;
+	font-size: 30px;
+	margin: 5%;
+	width: 82%;
+	height: 100%;
+	padding: 3%;
+	border: 2px solid blue;
+}
+fieldset legend{
+	margin-left: 20%;
+	color: blue;
+}
+#myAcc{
+	position: relative;
+	font-size: 17px;
+	width:90%;
+	height:100%;
+}
+#myAcc img{
+	width: 150px;
+	height: 150px;
+	border: 1px solid blue;
+	border-radius: 50%;
+}
+#myAcc>ul{
+	list-style-type: none;
+	margin-left: 10%;
+
+}
+#myAcc>ul span{
+	position: relative;
+	left: 5%;
+	color: blue;
+	font-style: italic;
+}
+
+#menu{
+	width:90%;
+	height:100%;
+	padding: 0 5% 0 5%;
+}
+
+#menu .input{
+	width:100%;
+	height:40px;
+	margin-top:10px;
+	margin-left:0%;
+	border:1px solid blue;
+	cursor:pointer;
+	box-shadow: 0 0 10px blue;
+}
+#menu .input:hover{
+	box-shadow: 0 0 10px hotpink;
+	border: 2px solid hotpink;
+}
+
+.form{
+	background-color:white;
+	width:79%;
+	height:100%;
+	padding: 5% 10% 10% 10%;
+	border: 1px solid skyblue;
+	box-shadow: 0 0 10px blue;
+	display: none;
+	animation: formanimation 3s;
+}
+@keyframes formanimation {
+	0%{height: 0;}
+	100%{height: 170px;}
+}
+.form>input{
+	width: 100%;
+	height: 30px;
+	border: 2px solid blue;
+}
+.form>input:focus{
+	box-shadow: 0 0 5px black;
+}
+.form>p{
+	color: red;
+}
+.form>.btn{
+	background-color: skyblue;
+	text-align: center;
+	border: 2px solid blue;
+	margin-top: 10%;
+}

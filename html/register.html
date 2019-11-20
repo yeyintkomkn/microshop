@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="../css/memberform.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+		<div id="registerform">
+			<fieldset>
+				<legend><h1>SIGN UP or <a href="login.html">SIGN IN</a></h1></legend>
+				<form id="aaa">
+					Name:<br>
+					<input type="text" name="name" autofocus="on" maxlength="30" id="name" placeholder="Name">
+					<p id="nameError">&nbsp;</p>
+					Email:<br>
+					<input type="text" name="email" maxlength="30" id="email" placeholder="example@gmail.com" autocomplete="off">
+					<p id="emailError">&nbsp;</p>
+					Mobile Phone:<br>
+					<input type="text" name="phone" maxlength="11" id="phone" placeholder="09.........">
+					<p id="phoneError">&nbsp;</p>
+
+					Gender:<br>
+					<input type="radio" name="gender" value="male" checked> Male
+					<input type="radio" name="gender" value="female"> Female<br><br>
+
+					Date Of Birth:<br>
+					<input type="date" name="birthDate" id="date">
+					<p id="dateError">&nbsp;</p>
+
+					Create a password:<br>
+					<input type="password" name="password" id="password" placeholder="At Least 8 characters">
+					<p id="passwordError">&nbsp;</p>
+
+					Confirm your password:<br>
+					<input type="password" name="confirmpassword" id="confirmpassword" placeholder="At Least 8 characters">
+					<p id="confirmpasswordError">&nbsp;</p><br>
+
+					<fieldset class="security">
+						<legend>For Security</legend>
+						<p class="par">Please remember question and your answer.You can recover your old account with this question and answer when you forgot password.</p><br>
+						<label>Select Question:</label><br>
+						<select id="question" name="question">
+							<option value="0">Who is your Lover?</option>
+							<option value="1">Who am I?</option>
+							<option value="2">Who is your Idol?</option>
+							<option value="3">What is your favourite color?</option>
+						</select><br><br>
+						<label>Answer Question:</label><br>
+						<input type="text" id="answer" name="answer">
+						<p id="ansError">&nbsp;</p><br>
+					</fieldset><br>
+					Select ProfilePicture: <br>
+					<input type="file" accept="image/*" name="profilepicture" id="profilepicture" onchange="displaySelectedPhoto()"><br>
+					<p id="errorImage1">&nbsp;</p>
+					<center><img id="showPP" src="../picture/Icon/user.png"></img></center>
+
+					<input type="button" class="btn" id="regBtn" value="Register" onclick="checkValidation()"><br>
+					<center><a href="login.html" class="link">I have already acccount.Login?</a></center>
+				</form>
+			</fieldset>
+		</div>
+<script src="../js/Register.js"></script>
+</body>
+</html>

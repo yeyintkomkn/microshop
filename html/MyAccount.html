@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="../css/MyAccount.css" rel="stylesheet" type="text/css">
+<script src="../js/CookieUtil.js"></script>
+</head>
+<body onload="displayAccountInfo()">
+	<fieldset>
+		<legend>My Account</legend>
+		<div id="myAcc">
+			<center id="proflie_img"><img src=""></img></center>
+			<ul>
+				<li>Name -<span id="accName"></span>
+				<li>Email -<span id="accEmail"></span>
+				<li>Phone -<span id="accPhone"></span>
+			</ul
+		</div>
+	</fieldset>
+	<div id="menu">
+		<input type="button" value="ChangePassword" onclick="showFormUI('Password')" class="input"><br>
+			<div id="Password" class="form">
+				Old Password:<br>
+				<input type="password" class="txt1">
+				<p class="error1"></p><br>
+				New Password:<br>
+				<input type="password" class="txt2">
+				<p class="error2"></p>
+				<input type="button" value="Update" class="btn">
+			</div>
+		<input type="button" value="ChangeEmailAddress" onclick="showFormUI('Email')" class="input"><br>
+			<div id="Email" class="form">
+				Enter Your Password:<br>
+				<input type="password" class="txt1">
+				<p class="error1"></p><br>
+				New EmailAddress:<br>
+				<input type="email" class="txt2">
+				<p class="error2"></p>
+				<input type="button" value="Update" class="btn">
+			</div>
+		<input type="button" value="ChangeUserName" onclick="showFormUI('UserName')" class="input"><br>
+			<div id="UserName" class="form">
+				Enter Your Password:<br>
+				<input type="password" class="txt1">
+				<p class="error1"></p><br>
+				New UserName:<br>
+				<input type="text" class="txt2">
+				<p class="error2"></p>
+				<input type="button" value="Update" class="btn">
+			</div>
+		<input type="button" value="ChangePhoneNumber" onclick="showFormUI('Phone')" class="input"><br>
+			<div id="Phone" class="form">
+				Enter Your Password:<br>
+				<input type="password" class="txt1">
+				<p class="error1"></p><br>
+				New Mobile Phone no:<br>
+				<input type="tel" class="txt2" maxlength="11" placeholder="09----------------">
+				<p class="error2"></p>
+				<input type="button" value="Update" class="btn">
+			</div>
+		<input type="button" value="LogOut" onclick="LogOut()" class="input"><br>
+		<input type="button" value="DeleteAccount" onclick="DeleteAccount()" class="input"><br>
+		<input type="button" value="AdvenceUser" onclick="changeAdvanceUser()" id="btnAdvance" class="input"><br>
+	</div>
+
+<script src="../js/MyAccount.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+body{
+	width:60%;
+	height:80%;
+	align:center;
+	padding-top: 5%;
+}
+
+a{
+	text-decoration:none;
+}
+
+P{
+	font-size:15px;
+	color:red;
+	margin-top: 0px;
+}
+
+
+#form{
+	margin:auto 100px;
+	font-size:20px;
+	padding:0px;
+	width:100%;
+}
+#postForm{
+	position: absolute;
+}
+
+.btn{
+	width:280px;
+	height:40px;
+	margin-left:0px;
+	border:2px solid blue;
+	background-color: skyblue;
+	font-size: 20px;
+	color: blue;
+}
+.btn:hover{
+	background-color: hotpink;
+	color: white;
+}
+#category,#name,#price,#code,#city{
+	width:280px;
+	height:30px;
+	border:1px solid blue;
+}
+#name:focus,#price:focus,#code:focus,#description:focus{
+	border: 2px solid blue;
+}
+#image1,#image2,#image3{
+	width:280px;
+	height:30px;
+}
+
+#description{
+	width:280px;
+	height:100px;
+	border:1px solid blue;
+	
+}
+#forImg{
+	margin-left: -95px;
+	display: flex;
+}
+#forImg .img{
+	width:150px;
+	height:150px;
+	border:2px solid blue;
+	margin: 3px;
+}

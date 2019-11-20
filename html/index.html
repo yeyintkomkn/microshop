@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MicroShop</title>
+<meta charset="utf-8">
+<meta name="viewpoint" content="width=device-width">
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<script src="../js/CookieUtil.js"></script>
+</head>
+<body onload="checkUserType()">
+	<div id="wraphead">
+		<!--########Header#######-->
+		<div id="title">
+
+		</div>
+			<!--##Header##-->
+			<div id="header">
+				<img src="../picture/logo/girl1.png" class="logo" id="logo1">
+				<img src="../picture/logo/girl1.png" class="logo" id="logo2">
+
+				<h1 id="headerTitle">Micro<span>Shop</span></h1>
+				<h3 id="headerText"></h3>
+				<img src="../picture/logo/logo1.png" class="logo" id="logo3">
+
+			</div>
+			<!--##nav main##-->
+		<div id="navigation" >
+			<ul class="nav" >
+				<li id="home" onclick="changeIframe('home')">				 <img src="../picture/Icon/shopingcard.png"><snap>HotNews		</snap></li>
+				<li ><img src="../picture/Icon/category.png"><snap id="category">Category &raquo;</snap>
+				   <ul class="sub">
+						<li onclick="changeIframe('1')">			<img src="../picture/Icon/rain.png"><snap>မိုးရာသီဖက္ရွင္				</snap></li>
+						<li onclick="changeIframe('2')">			<img src="../picture/Icon/shirt.png"><snap>အ၀တ္အထည္				</snap></li>
+						<li onclick="changeIframe('3')">			<img src="../picture/Icon/couple.png"><snap>ခ်စ္သူမ်ားအတြက္		</snap></li>
+						<li onclick="changeIframe('4')">			<img src="../picture/Icon/foot.png"><snap>ဖိနပ္								</snap></li>
+						<li onclick="changeIframe('5')">			<img src="../picture/Icon/bag.png"><snap>အိတ္									</snap></li>
+						<li onclick="changeIframe('6')">		 	<img src="../picture/Icon/uniform.png"><snap>အားကစား၀တ္စံု		</snap></li>
+						<li onclick="changeIframe('7')">			<img src="../picture/Icon/eyeglasses.png"><snap>မ်က္မွန္				</snap></li>
+						<li onclick="changeIframe('8')">	 		<img src="../picture/Icon/watch.png"><snap>နာရီ 							</snap></li>
+						<li onclick="changeIframe('9')">	 		<img src="../picture/Icon/beauty.png"><snap>အလွအပ 					</snap></li>
+						<li onclick="changeIframe('10')">		 	<img src="../picture/Icon/update.png"><snap>စာေရးကိရိယာ				</snap></li>
+						<li onclick="changeIframe('11')">		 	<img src="../picture/Icon/computer.png"><snap>ကြန္ပ်ူတာ/ဖုန္း		</snap></li>
+						<li onclick="changeIframe('12')">		 	<img src="../picture/Icon/kitchen.png"><snap>မီးဖိုေခ်ာင္သံုးပစၥည္းမ်ား</snap></li>
+						<li onclick="changeIframe('13')">		 	<img src="../picture/Icon/house.png"><snap>အိမ္အလွဆင္ပစၥည္းမ်ား	</snap></li>
+						<li onclick="changeIframe('14')">			<img src="../picture/Icon/desk.png"><snap>ပရိေဘာဂ							</snap></li>
+						<li onclick="changeIframe('15')">			<img src="../picture/Icon/electronic.png"><snap>လ်ွပ္စစ္ပစၥည္းမ်ား</snap></li>
+						<li onclick="changeIframe('16')">			<img src="../picture/Icon/gift.png"><snap>လက္ေဆာင္					 </snap></li>
+						<li onclick="changeIframe('17')">		 	<img src="../picture/Icon/shopingcard.png"><snap>အျခားအရာ		 </snap></li>
+				   </ul>
+				</li>
+				<li id="foryou" onclick="changeIframe('foryou')">		 <img src="../picture/Icon/foryou.png"><snap>ForYou </snap></li>
+				<li id="wishlist" onclick="changeIframe('wishlist')"><img src="../picture/Icon/wishlist.png"><snap>WishList</snap></li>
+				<li id="post" onclick="displayPost_UI()"><img src="../picture/Icon/add.png"><snap>Sell-Item</snap></li>
+				<li id="myprofile" onclick="changeIframe('profile')"><img src="../picture/Icon/user.png"><snap>Profile </snap></li>
+				<li id="order" onclick="changeIframe('order')">			 <img src="../picture/Icon/order.png"><snap>OrderList</snap></li>
+
+			</ul>
+			<input type="search" id="search" placeholder="Search Item">
+		</div>
+
+	</div>
+		<!--
+		########body#######
+		-->
+	<div id="warpbody">
+
+		<div id="body">
+
+				<!--##left##-->
+				<div id="promotion" class="body_layout">
+						<div class="propost">
+							<img src="../picture/hot_1.png"></img>
+						</div>
+						<div class="propost">
+							<img src="../picture/hot_2.png"></img>
+						</div>
+						<div class="propost">
+							<img src="../picture/hot_3.png"></img>
+						</div>
+						<div class="propost">
+							<img src="../picture/hot_5.png"></img>
+						</div>
+						<div class="propost">
+							<img src="../picture/hot_1.png"></img>
+						</div>
+						<div class="propost">
+							<img src="../picture/hot_2.png"></img>
+						</div>
+						<div class="propost">
+							<img src="../picture/hot_3.png"></img>
+						</div>
+						<div class="propost">
+							<img src="../picture/hot_5.png"></img>
+						</div>
+						<div class="propost">
+							<img src="../picture/hot_1.png"></img>
+						</div>
+						<div class="propost">
+							<img src="../picture/hot_2.png"></img>
+						</div>
+
+
+				</div>
+
+
+				<!--##center##-->
+				<div id="content" class="body_layout">
+						<iframe src="displayPost.html" name="home" id="iframe"></iframe>
+				</div>
+				<!--##right##-->
+				<div id="member" class="body_layout">
+						<iframe src="login.html" width="100%" height="100%" id="memberFrame" style="border:none"></iframe>
+				</div>
+
+
+		</div>
+
+	</div>
+	<footer></footer>
+<!--####LightBox#####-->
+	<div id="overlay" onclick="hide()"></div>
+	<div id="post_UI">
+		<div id="header_UI"><h1><snap id="text">Sell Your Item</snap> <span id="close" onclick="hide()">&times;</span></h1>  </div>
+		<iframe id="post_iframe" width="100%" height="90%" style="border:none"></iframe>
+	</div>
+	<div id="image_lightbox">
+	<!--<input type="button" class="lightbox_btn" id="lightbox_btnclose" value="&times;" onclick="hide()">
+			<input type="button" class="lightbox_btn" id="lightbox_btnleft" value="&#10094">
+			<input type="button" class="lightbox_btn" id="lightbox_btnright" value="&#10095">-->
+			<div id="desc">
+				<snap id="price">10000</snap>
+				<snap id="phone">09771672511</snap>
+			</div>
+
+	</div>
+
+<script src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href="../css/memberform.css" rel="stylesheet" type="text/css">
+<script src="../js/CookieUtil.js"></script>
+</head>
+<body>
+
+		<div id="loginform">
+			<fieldset>
+			<legend>	<h1>SIGN IN or <a href="register.html">SIGN UP</a></h1></legend>
+				<center><img id="showPP" src="../picture/Icon/user.png"></img></center>
+				Email:<br>
+				<input type="email" autocomplete="off" autofocus="on" name="email" maxlength="40" id="email" placeholder="example@gmail.com">
+				<p id="emailError">&nbsp;</p>
+				Password:<br>
+				<input type="password" name="password" id="password" placeholder="At Least 8 characters">
+				<p id="passwordError">&nbsp;</p>
+
+				<input type="submit" value="Login" id="focus" class="btn" onclick="checkValidation()" >
+				<br>
+				<center><a href='accRecovery.html' class='link'>Forgot password?</a></center>
+			</fieldset>
+		</div>
+
+<script src="../js/Login.js"></script>
+</body>
+</html>
